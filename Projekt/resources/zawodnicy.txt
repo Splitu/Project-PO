@@ -1,0 +1,6 @@
+Allison:Becker:02/10/1992:Bramkarz:1
+Tomasz:Nowacki:02/10/1992:Obrońca:2
+Robert:Małachowski:03/05/2000:Napastnik:11
+Michał:Nowak:03/11/2002:Pomocnik:8
+Janusz:Gol:24/12/2001:Obrońca:7
+Dawid:Nowak:24/05/1998:Napastnik:9

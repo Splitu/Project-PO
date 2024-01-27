@@ -51,7 +51,7 @@ public class PasswordCheck extends JFrame {
 
     // Metoda sprawdzająca dane logowania
     private boolean checkCredentials(String login, String password) {
-        try (BufferedReader br = new BufferedReader(new FileReader("Projekt/użytkownicy.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("Projekt/resources/użytkownicy.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 // Zakładając, że plik tekstowy ma format: imię:nazwisko:login:hasło
