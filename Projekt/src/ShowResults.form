@@ -31,7 +31,13 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <alignmentX value="0.5"/>
+              <editable value="false"/>
+              <enabled value="false"/>
+              <font name="Fira Code" size="20"/>
+              <wrapStyleWord value="false"/>
+            </properties>
           </component>
         </children>
       </grid>

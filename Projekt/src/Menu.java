@@ -7,7 +7,7 @@ public class Menu extends JFrame{
     private JRadioButton addDeleteBtn;
     private JRadioButton showPlayersBtn;
     private JRadioButton addScoreBtn;
-    private JRadioButton showScoreBtn;
+    private JRadioButton showResultsBtn;
     private JButton exitBtn;
     private JButton submitBtn;
     private JButton logoutBtn;
@@ -31,6 +31,9 @@ public class Menu extends JFrame{
                 } else if(showPlayersBtn.isSelected()) {
                     ShowPlayers showPlayers = new ShowPlayers();
                     showPlayers.setVisible(true);
+                } else if(showResultsBtn.isSelected()) {
+                    ShowResults showResults = new ShowResults();
+                    showResults.setVisible(true);
                 }
                 dispose();
             }

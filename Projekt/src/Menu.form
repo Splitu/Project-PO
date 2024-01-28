@@ -48,7 +48,7 @@
                   <text value="Dodaj wynik meczu"/>
                 </properties>
               </component>
-              <component id="a8977" class="javax.swing.JRadioButton" binding="showScoreBtn">
+              <component id="a8977" class="javax.swing.JRadioButton" binding="showResultsBtn">
                 <constraints>
                   <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
