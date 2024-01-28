@@ -30,11 +30,9 @@ public class PasswordCheck extends JFrame {
                 String password = new String(passwordField.getPassword());
 
                 if (checkCredentials(login, password)) {
-                    // Jeśli dane logowania są poprawne, otwórz nowe okno "Menu" i zamknij obecne
                     openMenuWindow();
-                    dispose(); // Zamknij okno logowania
+                    dispose();
                 } else {
-                    // Jeśli dane logowania są niepoprawne, wyświetl komunikat
                     JOptionPane.showMessageDialog(null, "Błędny login lub hasło!");
                 }
             }
@@ -43,36 +41,30 @@ public class PasswordCheck extends JFrame {
         exitBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Zamknij aplikację po kliknięciu przycisku "Wyjście"
                 System.exit(0);
             }
         });
     }
 
-    // Metoda sprawdzająca dane logowania
     private boolean checkCredentials(String login, String password) {
         try (BufferedReader br = new BufferedReader(new FileReader("Projekt/resources/użytkownicy.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
-                // Zakładając, że plik tekstowy ma format: imię:nazwisko:login:hasło
                 String[] parts = line.split(":");
                 if (parts.length == 4) {
                     String storedLogin = parts[2];
                     String storedPassword = parts[3];
                     if (login.equals(storedLogin) && password.equals(storedPassword)) {
-                        System.out.println(storedLogin);
-                        System.out.println(storedPassword);
-                        return true; // Znaleziono pasujące dane logowania
+                        return true;
                     }
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return false; // Nie znaleziono pasujących danych logowania
+        return false;
     }
 
-    // Metoda otwierająca okno "Menu"
     private void openMenuWindow() {
         Menu menu = new Menu();
         menu.setVisible(true);

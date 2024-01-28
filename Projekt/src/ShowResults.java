@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -24,20 +23,15 @@ public class ShowResults extends JFrame {
             dispose();
             openMenuWindow();
         });
-
         exitBtn.addActionListener(e -> {
             System.exit(0);
         });
-
-
-        // Wczytaj i wyświetl wyniki
         displayResults();
     }
 
     private void displayResults() {
         results = readResultsFromFile();
 
-        // Sortuj wyniki od najstarszego do najnowszego
         Collections.reverse(results);
 
         StringBuilder formattedResults = new StringBuilder();

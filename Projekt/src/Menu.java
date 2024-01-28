@@ -34,6 +34,9 @@ public class Menu extends JFrame{
                 } else if(showResultsBtn.isSelected()) {
                     ShowResults showResults = new ShowResults();
                     showResults.setVisible(true);
+                } else if(addScoreBtn.isSelected()) {
+                    AddScore addScore = new AddScore();
+                    addScore.setVisible(true);
                 }
                 dispose();
             }

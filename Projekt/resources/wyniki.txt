@@ -1,2 +1,4 @@
 18/02/2023:Liverpool:Arsenal:3:0
 23/10/2022:Chelsea:Liverpool:2:2
+22/11/2022:Liverpool:Newscatle United:4:2
+11/02/2021:Liverpool:Manchester City:6:4

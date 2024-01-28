@@ -93,10 +93,8 @@ public class ShowPlayers extends JFrame{
         tableModel = new DefaultTableModel(columnNames, 0);
         table1.setModel(tableModel);
 
-        // Read data from file
         allPlayers = readPlayersFromFile();
 
-        // Add all players to the table
         for (Player player : allPlayers) {
             tableModel.addRow(new Object[]{player.getNumber(), player.getFullName(), player.getAge(), player.getPosition()});
         }
@@ -118,9 +116,8 @@ public class ShowPlayers extends JFrame{
 
     private void filterPlayersByPosition(String position) {
         DefaultTableModel model = (DefaultTableModel) table1.getModel();
-        model.setRowCount(0); // Clear the table
+        model.setRowCount(0);
 
-        // Add players with the specified position to the table
         for (Player player : allPlayers) {
             if (player.getPosition().equalsIgnoreCase(position)) {
                 model.addRow(new Object[]{player.getNumber(), player.getFullName(), player.getAge(), player.getPosition()});
@@ -132,11 +129,10 @@ public class ShowPlayers extends JFrame{
         menu.setVisible(true);
     }
     private void resetRadioButtons() {
-        // Zresetuj wybrane RadioButtony
         buttonGroup1.clearSelection();
     }
     private void populateTable(List<Player> players) {
-        tableModel.setRowCount(0); // Wyczyszczenie tabeli
+        tableModel.setRowCount(0);
         for (Player player : players) {
             tableModel.addRow(new Object[]{player.getNumber(), player.getFullName(), player.getAge(), player.getPosition()});
         }
