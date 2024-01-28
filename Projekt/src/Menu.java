@@ -26,14 +26,13 @@ public class Menu extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (addDeleteBtn.isSelected()) {
-                    // Jeśli opcja "addDeleteBtn" została wybrana, otwórz okno "AddDeletePlayers"
                     AddDeletePlayers addDeletePlayers = new AddDeletePlayers();
                     addDeletePlayers.setVisible(true);
-                    // Zamknij obecne okno menu
-                    dispose();
-                } else {
-                    // Tutaj możesz obsłużyć inne opcje, jeśli są dostępne
+                } else if(showPlayersBtn.isSelected()) {
+                    ShowPlayers showPlayers = new ShowPlayers();
+                    showPlayers.setVisible(true);
                 }
+                dispose();
             }
         });
     }
