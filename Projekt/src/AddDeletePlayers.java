@@ -26,7 +26,7 @@ public class AddDeletePlayers extends JFrame {
         super("Dodaj/Usuń Zawodnika");
         this.setContentPane(this.JPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(600, 400);
+        this.setSize(800, 600);
 
         listModel = new DefaultListModel<>();
         playerList.setModel(listModel);
@@ -44,7 +44,6 @@ public class AddDeletePlayers extends JFrame {
         editBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Pobierz dane z pól tekstowych
                 String firstName = firstNameField.getText();
                 String lastName = lastNameField.getText();
                 String dateOfBirth = dateField.getText();

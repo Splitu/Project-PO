@@ -32,12 +32,12 @@
                   <text value="Dodawanie i usuwanie zawodników"/>
                 </properties>
               </component>
-              <component id="43de3" class="javax.swing.JRadioButton" binding="firstTeamBtn">
+              <component id="43de3" class="javax.swing.JRadioButton" binding="showPlayersBtn">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Wyświetl wyjściową 11"/>
+                  <text value="Wyświetlanie zawodników"/>
                 </properties>
               </component>
               <component id="4a7a" class="javax.swing.JRadioButton" binding="addScoreBtn">

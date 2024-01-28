@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 public class Menu extends JFrame{
     private JPanel JPanel1;
     private JRadioButton addDeleteBtn;
-    private JRadioButton firstTeamBtn;
+    private JRadioButton showPlayersBtn;
     private JRadioButton addScoreBtn;
     private JRadioButton showScoreBtn;
     private JButton exitBtn;
@@ -21,7 +21,7 @@ public class Menu extends JFrame{
         super("Team Manager App");
         this.setContentPane(this.JPanel1);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(400, 200);
+        this.setSize(800, 600);
         submitBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

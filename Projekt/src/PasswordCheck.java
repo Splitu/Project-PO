@@ -21,7 +21,7 @@ public class PasswordCheck extends JFrame {
         super("Team Manager App");
         this.setContentPane(this.JPanel1);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(400, 200);
+        this.setSize(800, 600);
 
         loginBtn.addActionListener(new ActionListener() {
             @Override
