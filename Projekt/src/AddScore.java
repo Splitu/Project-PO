@@ -19,10 +19,11 @@ public class AddScore extends JFrame{
     private JButton sendBtn;
 
     public AddScore() {
-        super("Team Manager App");
+        super("Dodaj wynik");
+        this.setIconImage(new ImageIcon("Projekt/resources/ball.png").getImage());
         this.setContentPane(this.JPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(800, 600);
+        this.pack();
 
         backBtn.addActionListener(e -> {
             dispose();

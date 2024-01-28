@@ -25,10 +25,11 @@ public class ShowPlayers extends JFrame{
     private DefaultTableModel tableModel;
 
     public ShowPlayers() {
-        super("Show Players");
+        super("Zawodnicy");
+        this.setIconImage(new ImageIcon("Projekt/resources/ball.png").getImage());
         this.setContentPane(this.JPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(800, 600);
+        this.setSize(600, 400);
         backBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

@@ -15,10 +15,11 @@ public class ShowResults extends JFrame {
     private List<String> results;
 
     public ShowResults() {
-        super("Sprawdź wyniki");
+        super("Wyniki");
+        this.setIconImage(new ImageIcon("Projekt/resources/ball.png").getImage());
         this.setContentPane(this.JPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(800, 600);
+        this.setSize(600, 500);
         backBtn.addActionListener(e -> {
             dispose();
             openMenuWindow();

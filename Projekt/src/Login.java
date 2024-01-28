@@ -5,23 +5,24 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class PasswordCheck extends JFrame {
-    private JPanel JPanel1;
+public class Login extends JFrame {
+    private JPanel JPanel;
     private JTextField loginField;
     private JPasswordField passwordField;
     private JButton loginBtn;
     private JButton exitBtn;
 
     public static void main(String[] args) {
-        PasswordCheck passwordCheck = new PasswordCheck();
-        passwordCheck.setVisible(true);
+        Login login = new Login();
+        login.setVisible(true);
     }
 
-    public PasswordCheck() {
-        super("Team Manager App");
-        this.setContentPane(this.JPanel1);
+    public Login() {
+        super("Manager App");
+        this.setIconImage(new ImageIcon("Projekt/resources/ball.png").getImage());
+        this.setContentPane(this.JPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(800, 600);
+        this.pack();
 
         loginBtn.addActionListener(new ActionListener() {
             @Override

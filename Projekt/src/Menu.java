@@ -19,9 +19,10 @@ public class Menu extends JFrame{
 
     public Menu() {
         super("Team Manager App");
+        this.setIconImage(new ImageIcon("Projekt/resources/ball.png").getImage());
         this.setContentPane(this.JPanel1);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(800, 600);
+        this.setSize(400, 250);
         submitBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -41,5 +42,22 @@ public class Menu extends JFrame{
                 dispose();
             }
         });
+        exitBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+        logoutBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                openLoginWindow();
+            }
+        });
+    }
+    private void openLoginWindow() {
+        Login login = new Login();
+        login.setVisible(true);
     }
 }
