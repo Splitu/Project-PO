@@ -1,6 +1,4 @@
-Allison:Becker:02/10/1992:Bramkarz:1
-Tomasz:Nowacki:02/10/1992:Obrońca:2
-Robert:Małachowski:03/05/2000:Napastnik:11
-Michał:Nowak:03/11/2002:Pomocnik:8
-Janusz:Gol:24/12/2001:Obrońca:7
-Dawid:Nowak:24/05/1998:Napastnik:9
+Alison:Becker:02/10/1992:Bramkarz:1
+Joe:Gomez:23/05/1997:Obrońca:2
+Ibrahima:Konate:25/05/1999:Obrońca:5
+Virgil:van Dijk:08/07/1991:Obrońca:4
